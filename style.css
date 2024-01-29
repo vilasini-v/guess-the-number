@@ -10,8 +10,12 @@ body::before {
     z-index: -1;
   }
   .dark-mode{
-    background-color: black;
+    background-color: #121212;
   }
+  .container.dark-mode {
+    background-color: #8b8b8b; /* Change this color as needed */
+}
+
   
 body{
     margin:0;
@@ -74,13 +78,15 @@ body{
     }
 }
 .imgButton{
-    background: url('light.svg') no-repeat;
-            background-size: cover; /* Adjust to your needs */
-            width: 50px; /* Adjust to your needs */
-            height: 50px; /* Adjust to your needs */
-            border: none;
-            cursor: pointer;
+    background-size: cover; /* Adjust to your needs */
+    width: 50px; /* Adjust to your needs */
+    height: 50px; /* Adjust to your needs */
+    cursor: pointer;
     justify-self: right;
+    border: 2px dotted black;
+    border-radius: 30px;
+    background-color: transparent;
+
 }
 .heading{
     padding:0;

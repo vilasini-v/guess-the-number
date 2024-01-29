@@ -32,9 +32,17 @@ document.getElementById("submitguess").onclick = function () {
         document.getElementById('message').innerHTML = `Too many attempts, the number was ${y}!`;
     }
 }
-    
+
 }
-function myfunct(){
+function myfunct()  {
+    var button = document.querySelector('.imgButton');
     var element= document.body;
     element.classList.toggle("dark-mode");
+    button.style.backgroundImage === 'url("light.svg")'
+    if (button.style.backgroundImage === 'url("dark.svg")') {
+
+        button.style.backgroundImage = 'url("light.svg")';
+    } else {
+        button.style.backgroundImage = 'url("dark.svg")';
+    }
 }
