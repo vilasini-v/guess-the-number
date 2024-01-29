@@ -36,9 +36,9 @@ document.getElementById("submitguess").onclick = function () {
 }
 function myfunct()  {
     var button = document.querySelector('.imgButton');
+    button.style.backgroundImage === 'url("light.svg")'
     var element= document.body;
     element.classList.toggle("dark-mode");
-    button.style.backgroundImage === 'url("light.svg")'
     if (button.style.backgroundImage === 'url("dark.svg")') {
 
         button.style.backgroundImage = 'url("light.svg")';

@@ -12,11 +12,7 @@ body::before {
   .dark-mode{
     background-color: #121212;
   }
-  .container.dark-mode {
-    background-color: #8b8b8b; /* Change this color as needed */
-}
 
-  
 body{
     margin:0;
     background: #948392;
@@ -78,7 +74,8 @@ body{
     }
 }
 .imgButton{
-    background-size: cover; /* Adjust to your needs */
+    background-image: url("light.svg");
+    /* background-size: cover; Adjust to your needs */
     width: 50px; /* Adjust to your needs */
     height: 50px; /* Adjust to your needs */
     cursor: pointer;
@@ -86,7 +83,6 @@ body{
     border: 2px dotted black;
     border-radius: 30px;
     background-color: transparent;
-
 }
 .heading{
     padding:0;
