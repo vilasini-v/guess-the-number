@@ -3,12 +3,19 @@ let guess = 0;
 let maxAttempts = 5;
 
 document.getElementById("resetbutton").onclick= function(){
-    y = Math.floor(Math.random() * 50 + 1);
-    guess = 0;
-    maxAttempts = 5;
+    location.reload(); 
 
 }
-document.getElementById("submitguess").onclick = function () {
+console.log(y);
+
+document.getElementById("guessField").addEventListener("keypress", function(event) {
+    if (event.code === "Enter") { // Check if Enter key is pressed
+        event.preventDefault(); // Prevent default form submission behavior
+        submitGuess();
+    }
+});
+
+function submitGuess(){
     let x = document.getElementById("guessField").value;
     if (!(x > 0 &&  x<=50) ){
         document.getElementById('gors').innerHTML = `ERROR, enter a valid input!`;
